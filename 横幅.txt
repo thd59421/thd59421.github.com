@@ -1,0 +1,42 @@
+<CENTER>
+  <TABLE 
+style="BORDER: #666666 1px solid;" 
+cellSpacing=0 cellPadding=0 width=750 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV id="demo" style="OVERFLOW: hidden; WIDTH: 100%; COLOR:: #ffffff">
+      <TABLE cellSpacing=0 cellPadding=0 align=left border=0 cellspace="0">
+        <TBODY>
+        <TR>
+          <TD id="demo1" vAlign=top><table width="600" height="100"  border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="100" background="images/1.gif"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/2.jpg"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/3.gif"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/4.gif"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/5.gif"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/6.gif"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/7.jpg"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/8.jpg"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/9.gif"><div style="height:100px; width:100px; border:0px;"></div></td>
+              <td width="100" background="images/10.jpg"><div style="height:100px; width:100px; border:0px;"></div></td>
+            </tr>
+          </table></TD>
+          <TD id=demo2 vAlign=top>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+      <SCRIPT>
+var speed3=25//速度数值越大速度越慢
+demo2.innerHTML=demo1.innerHTML
+function Marquee(){
+if(demo2.offsetWidth-demo.scrollLeft<=0)
+demo.scrollLeft-=demo1.offsetWidth
+else{
+demo.scrollLeft++
+}
+}
+var MyMar=setInterval(Marquee,speed3)
+demo.onmouseover=function() {clearInterval(MyMar)}
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed3)}
+</SCRIPT>
+    </TD></TR></TBODY></TABLE></TD></TR></TABLE>
+</CENTER>
